@@ -1,0 +1,29 @@
+baseURL = 'https://onastick.org/'
+languageCode = 'en-AU'
+title = '... on a stick'
+# theme = 'myTheme'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 30
+
+#[module]
+ # [module.hugoVersion]
+  #  extended = true
+  #  min = '0.152.1'

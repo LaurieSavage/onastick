@@ -1,0 +1,5 @@
+{{ $bgimageHead := resources.Get "/img/golden_light_palouse.jpg" }}
+<div class = "titleMain" style = "background-image: url('{{ $bgimageHead.RelPermalink | safeURL }}');">
+  <h1>{{ site.Title }}</h1>
+  {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+</div>
